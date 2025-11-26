@@ -1,8 +1,248 @@
-@charset "UTF-8"; 
 
- 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-span.githubpages {  
-color: #FF0000; 
-font-weight: bold; 
-} 
+body {
+    body {
+    font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', Meiryo, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fff;
+    margin: 0; 
+    padding: 0; 
+}
+
+/*ヘッダー */
+
+.header {
+    background-color: rgba(255,255,255,0.1);
+    border-bottom: 0px solid #e0e0e0;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #000;
+}
+
+.nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+
+.nav a:hover {
+    color: #666;
+}
+
+/*  背景 */
+.hero {
+    width: 100%;
+    margin-bottom: 0px;
+}
+
+.hero-image {
+    width: 100%;
+    height: 800px;
+    overflow: hidden;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* 経歴 */
+.inner{
+    max-width: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 150px 0 0 0; 
+}
+
+.box{
+    display: flex;
+    flex-direction: row;
+    align-items: stretch; 
+    justify-content: space-between;
+    gap: 0; 
+}
+
+.box + .box{
+    margin-top: 0;
+}
+
+.box__body{
+    width: 46%;
+    padding: 20px; 
+}
+
+.box__ttl {
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.box__txt {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.box__image{
+    width: 50%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    line-height: 0;
+    flex-shrink: 0; 
+}
+
+.box__image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    margin: 0; 
+    padding: 0; 
+}
+
+.box.reverse{
+    flex-direction: row-reverse;
+}
+
+@media (max-width: 768px) {
+    .header .container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .nav ul {
+        gap: 20px;
+    }
+
+    .hero-image {
+        height: 300px;
+    }
+
+@media screen and (max-width:767px){
+    .box {
+        display: block;
+    }
+    .box + .box{
+        margin-top: 60px;
+    }
+    .box__body{
+        width: 100%;
+        padding: 0;
+    }
+    .box__image{
+        margin-top: 20px;
+        width: 100%;
+    }
+}
+
+/*footer*/
+
+#footer01 {
+  position: relative;
+  background: #222;
+}
+
+#footer01 .logo1 {
+  text-align: center;
+  padding: 20px 0;
+  border-bottom: 1px solid #111;
+}
+
+#footer01 .logo1 {
+  text-align: center; 
+}
+
+#footer01 .logo1 a {
+  display: inline-block;
+}
+
+#footer01 .logo1 img {
+  width: 120px;
+  margin: 0 auto; 
+  display: block;
+}
+#footer01 .nav {
+  text-align: center;
+}
+
+#footer01 .nav1 {
+  display: inline-block; 
+}
+
+#footer01 .nav1 a {
+  display: block;
+  padding: 0 10px;
+  color: #ccc;
+  text-align: center; 
+}
+
+@media only screen and (min-width: 641px) {
+  /* PCのみ */
+  #footer01 .nav {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding: 20px 0;
+  }
+  #footer01 .nav1 a:hover {
+    color: #ca353b;
+  }
+}
+
+
+/*下部メイン画像 */
+
+.main-image-section {
+    margin-bottom: 60px;
+}
+
+.main-image {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}}
