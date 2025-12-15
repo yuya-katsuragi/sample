@@ -112,6 +112,16 @@ body {
   text-align: center;
 }
 
+.box__body ul {
+  font-size: 20px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  list-style: none;
+  text-align: center;
+}
+
+.box
+
 .box__image {
   width: 50%;
   height: auto;
